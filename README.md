@@ -16,3 +16,5 @@ export AIRFLOW_HOME=~/airflowDB
 airflow initdb
 ```
 
+* Criando um script para AirFlow (DAG - Directed Acyclic Graph)
+
