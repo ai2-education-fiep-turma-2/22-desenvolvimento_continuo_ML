@@ -6,7 +6,7 @@
 * Instalacao https://airflow.apache.org/docs/stable/installation.html
 
 ```
-pip install apache-airflow
+conda install airflow
 ```
 
 * Configurando base do Airflow
