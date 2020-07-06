@@ -129,5 +129,17 @@ airflow test tutorial print_date 2015-06-01
 airflow test tutorial sleep 2015-06-01
 
 ```
+* Backfill: executa o DAG completo considerando as dependencias.Permite acompanhar o progresso da execucao na interface gráfica
+
+```
+airflow backfill tutorial -s 2015-06-01 -e 2015-06-07
+```
+
+Ativando interface gráfica do Airflow
+```
+
+airflow webserver
+```
 
 * Exercício: Montar um DAG para preparação de dados
+
