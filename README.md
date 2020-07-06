@@ -106,4 +106,18 @@ t1 >> [t2, t3]
 
 * Sequencia de transformação de dados
 
+* Depois de desenvolvido o DAG deve ser copiado para a pasta de DAGs do airflow: AIRFLOW_HOME
+
+* Utilitários do AirFlow para manipular o DAG:
+```
+#print list of DAGs
+airflow list_dags
+
+# mostra tarefas de um DAG especifico
+airflow list_tasks tutorial
+
+# mostra hierarquia de tarefas de um DAG
+airflow list_tasks tutorial --tree
+```
+
 * Exercício: Montar um DAG para preparação de dados
