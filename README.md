@@ -120,4 +120,14 @@ airflow list_tasks tutorial
 airflow list_tasks tutorial --tree
 ```
 
+* Executando tarefas de um DAG
+```
+# testing print_date
+airflow test tutorial print_date 2015-06-01
+
+# testing sleep
+airflow test tutorial sleep 2015-06-01
+
+```
+
 * Exercício: Montar um DAG para preparação de dados
