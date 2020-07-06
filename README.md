@@ -1,6 +1,6 @@
 # Desenvolvimento Contínuo e Integração Contínua para Modelos de Aprendizagem de Máquina
 
-# Aifflow (https://airflow.apache.org/)
+# Airflow (https://airflow.apache.org/)
 * Ferramenta para DATAops
 
 * Instalacao https://airflow.apache.org/docs/stable/installation.html
@@ -100,12 +100,10 @@ T2 e t3 em paralelo após t1
 t1 >> [t2, t3] 
 ```
 
-Preparando dados para sprint Sicoob
+* Preparando dados para sprint Sicoob
 
-Criando operadores python
+* Criando operadores python
 
-Sequencia de transformação de dados
+* Sequencia de transformação de dados
 
-Exercício
-
-Montar um DAG para preparação de dados
+* Exercício: Montar um DAG para preparação de dados
