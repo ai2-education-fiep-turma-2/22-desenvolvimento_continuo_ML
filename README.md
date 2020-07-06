@@ -12,6 +12,7 @@ conda install airflow
 * Configurando base do Airflow
 
 ```
+export AIRFLOW_HOME=~/airflowDB
 airflow initdb
 ```
 
