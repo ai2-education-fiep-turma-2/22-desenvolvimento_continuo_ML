@@ -128,6 +128,7 @@ airflow test tutorialteste print_host 2015-01-01
 
 ```
 * Backfill: executa o DAG completo considerando as dependencias.Permite acompanhar o progresso da execucao na interface gráfica
+* Por Padrão o DAG é executado uma vez por dia, se passar um intervalor com 3 dias o DAG sera executado 3 vezes
 
 ```
 airflow backfill tutorialteste -s 2015-06-01 -e 2015-06-07
