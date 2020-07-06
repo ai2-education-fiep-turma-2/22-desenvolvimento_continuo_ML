@@ -144,27 +144,21 @@ Exemplo de um DAG para sicob
 Visao geral do DAG
 
 * Task prep_cliente 
-* /tmp/CLIENTES_PF_NUM_CC.csv
-* Gera
-* "/tmp/CLIENTES_CLEANED.csv"
+* Entrada : /tmp/CLIENTES_PF_NUM_CC.csv
+* Saída: "/tmp/CLIENTES_CLEANED.csv"
 
 * Task prep_mov_conta
-* /tmp/LANCAMENTOS_2019_DESC_CREDITOS.zip
-* gera
-* /tmp/dadosJurosAn.csv
+* Entrada: /tmp/LANCAMENTOS_2019_DESC_CREDITOS.zip
+* Saída: /tmp/dadosJurosAn.csv
 
 
 * Task merge_mov_conta_dados_cliente
-* /tmp/dadosJurosAn.csv
-* /tmp/CLIENTES_CLEANED.csv
-* gera 
-* /tmp/cliente_totalCQ.csv
+* Entrada /tmp/dadosJurosAn.csv e /tmp/CLIENTES_CLEANED.csv
+* Saída: /tmp/cliente_totalCQ.csv
 
 * Task  prep_perfil
-* /tmp/Inputs_com_scores_GERAL.csv
-* /tmp/cliente_totalCQ.csv
-* Gera
-* /tmp/cliente_perfil_movimentacao.csv
+* Entrada /tmp/Inputs_com_scores_GERAL.csv e /tmp/cliente_totalCQ.csv
+* Saída: /tmp/cliente_perfil_movimentacao.csv
 
 * Exercício: Montar um DAG para preparação de dados
 
