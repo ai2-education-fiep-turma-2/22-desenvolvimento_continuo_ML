@@ -141,30 +141,30 @@ airflow webserver
 
 Exemplo de um DAG para sicob
 
-Visao geral do dAG
-Task prep_cliente 
-/tmp/CLIENTES_PF_NUM_CC.csv
-Gera
-"/tmp/CLIENTES_CLEANED.csv"
+Visao geral do DAG
 
-Task prep_mov_conta
-/tmp/LANCAMENTOS_2019_DESC_CREDITOS.zip
-gera
-/tmp/dadosJurosAn.csv
+* Task prep_cliente 
+* /tmp/CLIENTES_PF_NUM_CC.csv
+* Gera
+* "/tmp/CLIENTES_CLEANED.csv"
+
+* Task prep_mov_conta
+* /tmp/LANCAMENTOS_2019_DESC_CREDITOS.zip
+* gera
+* /tmp/dadosJurosAn.csv
 
 
-Task merge_mov_conta_dados_cliente
+* Task merge_mov_conta_dados_cliente
+* /tmp/dadosJurosAn.csv
+* /tmp/CLIENTES_CLEANED.csv
+* gera 
+* /tmp/cliente_totalCQ.csv
 
-/tmp/dadosJurosAn.csv
-/tmp/CLIENTES_CLEANED.csv
-gera 
-/tmp/cliente_totalCQ.csv
-
-Task  prep_perfil
-/tmp/Inputs_com_scores_GERAL.csv
-/tmp/cliente_totalCQ.csv
-Gera
-/tmp/cliente_perfil_movimentacao.csv
+* Task  prep_perfil
+* /tmp/Inputs_com_scores_GERAL.csv
+* /tmp/cliente_totalCQ.csv
+* Gera
+* /tmp/cliente_perfil_movimentacao.csv
 
 * Exercício: Montar um DAG para preparação de dados
 
