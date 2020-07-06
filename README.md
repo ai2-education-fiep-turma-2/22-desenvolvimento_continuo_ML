@@ -114,25 +114,23 @@ t1 >> [t2, t3]
 airflow list_dags
 
 # mostra tarefas de um DAG especifico
-airflow list_tasks tutorial
+airflow list_tasks tutorialteste
 
 # mostra hierarquia de tarefas de um DAG
-airflow list_tasks tutorial --tree
+airflow list_tasks tutorialteste --tree
 ```
 
 * Executando tarefas de um DAG
 ```
-# testing print_date
-airflow test tutorial print_date 2015-06-01
-
-# testing sleep
-airflow test tutorial sleep 2015-06-01
+airflow test tutorialteste pwd 2015-01-01
+airflow test tutorialteste print_date 2015-01-01
+airflow test tutorialteste print_host 2015-01-01
 
 ```
 * Backfill: executa o DAG completo considerando as dependencias.Permite acompanhar o progresso da execucao na interface gráfica
 
 ```
-airflow backfill tutorial -s 2015-06-01 -e 2015-06-07
+airflow backfill tutorialteste -s 2015-06-01 -e 2015-06-07
 ```
 
 Ativando interface gráfica do Airflow
@@ -140,6 +138,33 @@ Ativando interface gráfica do Airflow
 
 airflow webserver
 ```
+
+Exemplo de um DAG para sicob
+
+Visao geral do dAG
+Task prep_cliente 
+/tmp/CLIENTES_PF_NUM_CC.csv
+Gera
+"/tmp/CLIENTES_CLEANED.csv"
+
+Task prep_mov_conta
+/tmp/LANCAMENTOS_2019_DESC_CREDITOS.zip
+gera
+/tmp/dadosJurosAn.csv
+
+
+Task merge_mov_conta_dados_cliente
+
+/tmp/dadosJurosAn.csv
+/tmp/CLIENTES_CLEANED.csv
+gera 
+/tmp/cliente_totalCQ.csv
+
+Task  prep_perfil
+/tmp/Inputs_com_scores_GERAL.csv
+/tmp/cliente_totalCQ.csv
+Gera
+/tmp/cliente_perfil_movimentacao.csv
 
 * Exercício: Montar um DAG para preparação de dados
 
