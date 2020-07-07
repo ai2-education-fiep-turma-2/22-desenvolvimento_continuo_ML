@@ -161,5 +161,7 @@ Visao geral do DAG
     * Entrada /tmp/Inputs_com_scores_GERAL.csv e /tmp/cliente_totalCQ.csv
     * Saída: /tmp/cliente_perfil_movimentacao.csv
 
-* Exercício: Montar um DAG para preparação de dados
+* Exercício: 
+    * Instalar o airflow
+    * executar o DAG de exemplo tutorialtest.py
 
