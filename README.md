@@ -65,7 +65,9 @@ Opcoes para intervalo de tempo da execução do DAG
     #schedule_interval=timedelta(days=1)
 ```
 
-Tarefas do DAG
+* Tarefas do DAG
+
+```
 #t1, t2 e t3 sao tarefas desse workflow
 t1 = BashOperator(
     task_id='print_date',
@@ -88,6 +90,7 @@ t3 = BashOperator(
     params={'my_param': 'Parameter I passed in'},
     dag=dag,
 )
+```
 
 Sequencia de execução das tarefas
 Uma após a outra
@@ -165,3 +168,18 @@ Visao geral do DAG
     * Instalar o airflow
     * executar o DAG de exemplo tutorialteste.py
 
+## MLFLOW
+
+* instalacao
+
+```
+conda install mlflow
+```
+
+* Configuracao
+    * Escolha um diretório para armazenar os modelos (ex /data/output)
+
+* inicie a interface gráfica considerando o diretório escolhido
+```
+
+```
