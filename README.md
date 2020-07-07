@@ -177,9 +177,13 @@ pip install mlflow
 ```
 
 * Configuracao
-    * Escolha um diretório para armazenar os modelos (ex /data/output/server)
+    * Escolha um diretório para armazenar os modelos (ex /data/output/mlruns)
 
 * inicie a interface gráfica considerando o diretório escolhido
 ```
- mlflow server -p 8889 -h 0.0.0.0 --default-artifact-root /data/output/server
+mlflow server -p 8889 -h 0.0.0.0  --backend-store-uri 'file:///data/output/mlruns'
 ```
+
+* Execute os modelos com código mlrun a partir da pasta /data/output/
+    * ao executar os experimentos a partir dessa pasta será criado um diretório chamado mlruns, que a interface gráfica vai ser capaz de prover a visualização
+    
