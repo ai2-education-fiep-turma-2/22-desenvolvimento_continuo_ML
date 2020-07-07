@@ -163,5 +163,5 @@ Visao geral do DAG
 
 * Exercício: 
     * Instalar o airflow
-    * executar o DAG de exemplo tutorialtest.py
+    * executar o DAG de exemplo tutorialteste.py
 
