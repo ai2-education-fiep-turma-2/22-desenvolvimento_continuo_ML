@@ -177,9 +177,9 @@ conda install mlflow
 ```
 
 * Configuracao
-    * Escolha um diretório para armazenar os modelos (ex /data/output)
+    * Escolha um diretório para armazenar os modelos (ex /data/output/server)
 
 * inicie a interface gráfica considerando o diretório escolhido
 ```
-
+ mlflow server -p 8889 -h 0.0.0.0 --default-artifact-root /data/output/server
 ```
