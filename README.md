@@ -173,7 +173,7 @@ Visao geral do DAG
 * instalacao
 
 ```
-conda install mlflow
+pip install mlflow
 ```
 
 * Configuracao
