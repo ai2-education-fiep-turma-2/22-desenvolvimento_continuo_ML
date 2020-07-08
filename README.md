@@ -186,4 +186,21 @@ mlflow server -p 8889 -h 0.0.0.0  --backend-store-uri 'file:///data/output/mlrun
 
 * Execute os modelos com código mlrun a partir da pasta /data/output/
     * ao executar os experimentos a partir dessa pasta será criado um diretório chamado mlruns, que a interface gráfica vai ser capaz de prover a visualização
-    
+    * Na Página será possível verificar os parametros monitorados
+
+```
+cd /data/output
+python sicoob-model.py
+```
+
+* A partir da experiência com melhor desempenho servir o modelo como microserviço
+```
+cd /data/output
+mlflow models serve -m mlruns/0/23b93c3b36674bf9b5513e961c59b157/artifacts/model -h 0.0.0.0 -p 8890 --no-conda
+```
+
+* Teste Servindo Modelo Scikit e Keras
+
+* Comparacao utilizando modelo a partir do modelo salvo e por meio de chamadas de Microserviço
+
+
