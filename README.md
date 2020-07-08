@@ -206,3 +206,10 @@ mlflow models serve -m mlruns/0/23b93c3b36674bf9b5513e961c59b157/artifacts/model
 * Chamando Microserviço do Terminal e a partir de script Python
 
 * Servindo Modelo com Tensorflow
+
+## Exercicios:
+
+* Executar o cliente de predição sicoob (disponível no teams) python client-MS.py
+    * Altere alguns parametros e verifique o resultado
+
+* Instale e execute a interface gráfica do mlflow
