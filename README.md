@@ -203,4 +203,6 @@ mlflow models serve -m mlruns/0/23b93c3b36674bf9b5513e961c59b157/artifacts/model
 
 * Comparacao utilizando modelo a partir do modelo salvo e por meio de chamadas de Microserviço
 
+* Chamando Microserviço do Terminal e a partir de script Python
 
+* Servindo Modelo com Tensorflow
