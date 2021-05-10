@@ -1,6 +1,6 @@
 # divisão do processo de treino e inferência de um modelo em diferentes arquivos
 
-## Esse modelo tem como objetivo predizer o MPG de um carro, por meio de suas característica
+## Esse modelo tem como objetivo predizer o MPG de um carro, por meio de suas características
 
 * O Modelo desenvolvido no Jupyter está em: https://github.com/ai2-education-fiep-turma-2/15-DeepLearning/blob/master/Aula3/Keras-PyTorch-Exemplos.ipynb
 
