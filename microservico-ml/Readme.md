@@ -15,9 +15,9 @@ Gera como saída o arquivo auto_final.csv
 
 Gera como saída o modelo treinado autoModel.h5 e o scaler.pkl
 
-* Script para fazer predições no modelo treinado: predicao.py
-
 * Script para avaliar o modelo treinado: evaluateModel.py
+
+* Script para fazer predições no modelo treinado: predicao.py
 
 * Script que implementa um microserviço para servir predições no modelo treinado: predict-server.py
 
