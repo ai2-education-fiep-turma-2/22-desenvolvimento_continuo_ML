@@ -5,9 +5,7 @@
 * O Modelo desenvolvido no Jupyter está em: https://github.com/ai2-education-fiep-turma-2/15-DeepLearning/blob/master/Aula3/Keras-PyTorch-Exemplos.ipynb
 
 
-* Arquivo original :
-
-Auto2.csv
+* Arquivo original : Auto2.csv
 
 * Script para tratamento de dados : prepararDados.py
 
