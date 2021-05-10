@@ -28,8 +28,27 @@ Gera como saída o modelo treinado autoModel.h5 e o scaler.pkl
 * Script que realiza chamado ao microserviço de predição: predict-client.py
 
 ## servindo modelo com tensorflow_model_server
+
 * Linha de comando para colocar servidor de predições no ar
   tensorflow_model_server --rest_api_port=5001 --model_name=auto_model --model_base_path=/home/silvio/serving/
+
+O valor do parâmetro --model_base_path tem que ser igual ao diretório no qual o modelo treinao foi salvo usando o seguinte fragmento de código python:
+
+```
+version='1'
+
+export_path='/home/silvio/serving/'+version
+
+tf.keras.models.save_model(
+    model,
+    export_path,
+    overwrite=True,
+    include_optimizer=True,
+    save_format=None,
+    signatures=None,
+    options=None
+)
+```
 
 * script que faz chamadas para o servidor de predições: client_tf_server.py
 
