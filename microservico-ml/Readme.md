@@ -19,6 +19,10 @@ Gera como saída o modelo treinado autoModel.h5 e o scaler.pkl
 
 * Script para fazer predições no modelo treinado: predicao.py
 
+## Servindo modelo com microserviços
+
+### A partir do modelo treinado os scripts abaixo mostram como criar um servidor que recebe pedidos por inferências e um exemplo de cliente que poderia ser implementado em alguma aplicação
+
 * Script que implementa um microserviço para servir predições no modelo treinado: predict-server.py
 
 * Script que realiza chamado ao microserviço de predição: predict-client.py
