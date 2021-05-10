@@ -1,4 +1,4 @@
-# divisão do processo de treino e inferência de um modelo em diferentes arquivos
+# Divisão do processo de treino e inferência de um modelo em diferentes arquivos
 
 ## Esse modelo tem como objetivo predizer o MPG de um carro, por meio de suas características
 
