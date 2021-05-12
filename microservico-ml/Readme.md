@@ -29,6 +29,8 @@ Gera como saída o modelo treinado autoModel.h5 e o scaler.pkl
 
 ## servindo modelo com tensorflow_model_server
 
+* Instalação https://www.tensorflow.org/tfx/serving/setup
+
 * Linha de comando para colocar servidor de predições no ar
   tensorflow_model_server --rest_api_port=5001 --model_name=auto_model --model_base_path=/home/silvio/serving/
 
